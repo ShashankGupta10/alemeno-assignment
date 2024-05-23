@@ -2,7 +2,7 @@
 
 # Image Classifier
 
-The `Image Classifier` is a React project designed to facilitate the analysis and classification of images. It provides a user-friendly interface for uploading images, sending them to a backend for processing, and displaying the results in an easily understandable format.
+The `Image Color Recognizer` is a React and Django project designed to facilitate the analysis and identification of the colors in images. It provides a user-friendly interface for uploading images, sending them to a backend for processing, and displaying the results in an easily understandable format.
 
 ## Features
 
@@ -14,7 +14,7 @@ The `Image Classifier` is a React project designed to facilitate the analysis an
 ## Installation
 
 ### Prerequisites
-- Make sure you have Node.js and pnpm installed on your system. You can download and install them from the official [Node.js website](https://nodejs.org/).
+- Make sure you have Node.js, pnpm and Python > 3.10 installed on your system. You can download and install them from the official [Node.js website](https://nodejs.org/) and [Python Website](https://www.python.org/downloads/).
 
 ### Step 1: Clone the Project
 
@@ -32,9 +32,9 @@ Navigate to your project directory inside client and install the necessary depen
 ### Step 3: Install dependencies on the backend and run the backend
 Navigate to the project directory inside client and install the necessary dependencies:
 ```bash
-    pip install -r requirements.txt
-    py manage.py migrate
-    py manage.py runserver
+pip install -r requirements.txt
+py manage.py migrate
+py manage.py runserver
 ```
 
 
@@ -45,11 +45,11 @@ To use the Image Classifier, follow these steps:
 - Get Result: After selecting an image, click the "Get Result" button to send the image to the backend for processing.
 - View Results: The classification results will be displayed in a table once processing is complete.
 
-## Props
+### Props
 - `file`: The image file to be classified.
 - `setIsLoading`: A function to update the loading state.
 
-## Code Explanation
+### Code Explanation
 ### State Initialization
 - `isLoading`: State to manage the loading status.
 - `data`: State to store the classification results.
