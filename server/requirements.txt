@@ -1,0 +1,6 @@
+django
+django-rest-framework
+opencv-python
+scikit-learn
+django-cors-headers
+pillow
